@@ -1,0 +1,9 @@
+[Unit]
+Description=Fan controller.
+
+[Service]
+Type=Simple
+ExecStart=/bin/bash /usr/local/bin/fancontrol.sh
+
+[Install]
+WantedBy=multi-user.target
